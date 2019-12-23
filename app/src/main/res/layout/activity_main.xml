@@ -10,8 +10,8 @@
 
     <RelativeLayout
         android:id="@+id/background1"
-        android:layout_width="410dp"
-        android:layout_height="730dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +19,7 @@
 
         <ImageView
             android:id="@+id/gabungan"
-            android:layout_width="410dp"
+            android:layout_width="match_parent"
             android:layout_height="250dp"
             android:background="@drawable/gabungan"/>
 
@@ -90,28 +90,30 @@
             android:weightSum="3"
             android:gravity="center_horizontal"
             android:layout_marginTop="55dp">
+
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
-                
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
                     android:id="@+id/Appr"
-                    android:text="40"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"/>
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
+                    android:text="40"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@id/Appr"
+                    android:layout_centerHorizontal="true"
                     android:text="@string/label_posting"
                     android:textSize="15dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
